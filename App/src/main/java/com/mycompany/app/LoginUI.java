@@ -1,6 +1,11 @@
 package com.mycompany.app;
 
 import java.awt.Color;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import javax.swing.JOptionPane;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -72,6 +77,11 @@ public class LoginUI extends javax.swing.JFrame {
         jButton1.setBackground(new java.awt.Color(29, 41, 56));
         jButton1.setForeground(new java.awt.Color(190, 153, 125));
         jButton1.setText("LOG IN");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jButton2.setBackground(new java.awt.Color(29, 41, 56));
         jButton2.setForeground(new java.awt.Color(190, 153, 125));
@@ -86,6 +96,11 @@ public class LoginUI extends javax.swing.JFrame {
         jButton3.setForeground(new java.awt.Color(190, 153, 125));
         jButton3.setText("FORGOT PASSWORD");
         jButton3.setBorder(null);
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         jTextField1.setBackground(new java.awt.Color(126, 147, 171));
         jTextField1.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
@@ -178,6 +193,41 @@ public class LoginUI extends javax.swing.JFrame {
        new CreateAccUI().setVisible(true);
        //test
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+      try
+        {
+            Class.forName("com.mysql.jdbc.Driver");
+            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/quakedb","root","");
+            String sql ="select*from tb_users where USERNAME=? and PASSWORD=?";
+            String User = jTextField1.getText();
+            String Pass = jPasswordField1.getText();
+            PreparedStatement psmt = conn.prepareStatement(sql);
+           if("".equals(User)&&"".equals(Pass)){
+           JOptionPane.showMessageDialog(null,"UserName/Password Cannot Be Blank");
+           }else{
+             psmt.setString(1, jTextField1.getText());
+             psmt.setString(2, jPasswordField1.getText());
+             ResultSet rs=psmt.executeQuery();
+              if(rs.next()==true){
+            JOptionPane.showMessageDialog(null,"Successfully Logged In");
+            setVisible(false);
+            new DashboardUI().setVisible(true);
+              }else{
+                  JOptionPane.showMessageDialog(null,"Log In Failed");
+              }
+           }
+        }
+        catch(Exception e)
+                {
+                    JOptionPane.showMessageDialog(null,e);
+                }     
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+            setVisible(false);
+            new ForgotPassword().setVisible(true);
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments

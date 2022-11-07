@@ -5,6 +5,10 @@
 package com.mycompany.app;
 
 import java.awt.Color;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -170,7 +174,32 @@ public class CreateAccUI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-
+try
+        {
+            Class.forName("com.mysql.jdbc.Driver");
+            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/quakedb","root","");
+            String sql ="insert into tb_users (USERNAME, Password)" + "values(?,?)";
+            String User = jTextField1.getText();
+            String Pass = jPasswordField1.getText();
+            if("".equals(User)&&"".equals(Pass)){
+            JOptionPane.showMessageDialog(null,"Account Cannot Be Null");
+            }else{
+            PreparedStatement psmt = conn.prepareStatement(sql);
+           
+             psmt.setString(1, jTextField1.getText());
+             psmt.setString(2, jPasswordField1.getText());
+             
+             
+             psmt.executeUpdate();
+            JOptionPane.showMessageDialog(null,"Account Succesfully Created");
+            setVisible(false);
+            new LoginUI().setVisible(true);
+            }
+        }
+        catch(Exception e)
+                {
+                    JOptionPane.showMessageDialog(null,e);
+                }     
        
     }//GEN-LAST:event_jButton2ActionPerformed
 
