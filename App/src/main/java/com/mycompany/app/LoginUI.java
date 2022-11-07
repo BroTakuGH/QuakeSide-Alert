@@ -214,6 +214,7 @@ public class LoginUI extends javax.swing.JFrame {
             setVisible(false);
             new DashboardUI().setVisible(true);
               }else{
+            
                   JOptionPane.showMessageDialog(null,"Log In Failed");
               }
            }
