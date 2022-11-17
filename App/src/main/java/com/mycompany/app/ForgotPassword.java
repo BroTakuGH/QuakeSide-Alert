@@ -175,7 +175,7 @@ public class ForgotPassword extends javax.swing.JFrame {
         try
         {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/quakedb","root","");
+            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/dbquake","root","");
             String sql ="update tb_users set PASSWORD=? where USERNAME=?";
             
             PreparedStatement psmt = conn.prepareStatement(sql);

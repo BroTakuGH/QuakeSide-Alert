@@ -198,7 +198,7 @@ public class LoginUI extends javax.swing.JFrame {
       try
         {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/quakedb","root","");
+            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/dbquake","root","");
             String sql ="select*from tb_users where USERNAME=? and PASSWORD=?";
             String User = jTextField1.getText();
             String Pass = jPasswordField1.getText();
