@@ -103,7 +103,7 @@ public class LoginUI extends javax.swing.JFrame {
         });
 
         timeLab.setForeground(new java.awt.Color(255, 255, 255));
-        timeLab.setText("jLabel5");
+        timeLab.setText("(Real Time Clock)");
 
         jLabel3.setIcon(new javax.swing.ImageIcon("D:\\Some Stuff\\Repository\\QuakeSide-Alert\\App\\src\\main\\java\\MyIcons\\welcome-removebg-preview.png")); // NOI18N
         jLabel3.setText("jLabel3");
