@@ -177,7 +177,7 @@ public class CreateAccUI extends javax.swing.JFrame {
 try
         {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/dbquake","root","");
+            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/quakedb","root","");
             String sql ="insert into tb_users (USERNAME, Password)" + "values(?,?)";
             String User = jTextField1.getText();
             String Pass = jPasswordField1.getText();
