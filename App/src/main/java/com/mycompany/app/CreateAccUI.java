@@ -54,7 +54,7 @@ public class CreateAccUI extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(937, 523));
+        setPreferredSize(new java.awt.Dimension(922, 651));
         setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(20, 29, 38));
@@ -118,7 +118,7 @@ public class CreateAccUI extends javax.swing.JFrame {
                         .addGap(43, 43, 43)
                         .addComponent(jButton1))
                     .addComponent(jLabel6))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 69, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel4))
         );
         jPanel1Layout.setVerticalGroup(
