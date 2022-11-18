@@ -26,7 +26,7 @@ public class CreateAccUI extends javax.swing.JFrame {
      */
     public CreateAccUI() {
         initComponents();
-        
+        time();
         
         
       
@@ -246,6 +246,7 @@ try
         ).start();
         
     }
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
