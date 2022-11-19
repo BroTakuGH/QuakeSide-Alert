@@ -32,6 +32,7 @@ public class LoginUI extends javax.swing.JFrame {
         jLabel3.setIcon(imageWelcome);
         jLabel4.setIcon(imageUI);
     }
+    
     public LoginUI() {
         initComponents();
         Color col2 = new Color(36, 52, 71);
@@ -108,7 +109,6 @@ public class LoginUI extends javax.swing.JFrame {
         jButton3.setBackground(new java.awt.Color(255, 153, 0));
         jButton3.setForeground(new java.awt.Color(20, 29, 38));
         jButton3.setText("FORGOT PASSWORD?");
-        jButton3.setBorder(null);
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
