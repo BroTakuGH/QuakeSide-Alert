@@ -9,6 +9,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import javax.swing.Timer;
 
@@ -25,21 +26,27 @@ public class LoginUI extends javax.swing.JFrame {
     /**
      * Creates new form LoginUI
      */
+    ImageIcon imageWelcome = new ImageIcon("src\\main\\java\\MyIcons\\welcome-removebg-preview.png");
+    ImageIcon imageUI = new ImageIcon("src\\main\\java\\MyIcons\\loginui.png");
+    public void images(){
+        jLabel3.setIcon(imageWelcome);
+        jLabel4.setIcon(imageUI);
+    }
     public LoginUI() {
         initComponents();
         Color col2 = new Color(36, 52, 71);
         Color col = new Color(29, 41, 56);
         jPanel2.setBackground(col);
-
-
-        //test
-        //test
-
         
+        
+        //test
+        //test
+
+        images();
         time();
 
     }
-
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -111,10 +118,8 @@ public class LoginUI extends javax.swing.JFrame {
         timeLab.setForeground(new java.awt.Color(255, 255, 255));
         timeLab.setText("(Real Time Clock)");
 
-        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\rayki\\Documents\\GitHub\\QuakeSide-Alert\\App\\src\\main\\java\\MyIcons\\welcome-removebg-preview.png")); // NOI18N
         jLabel3.setText("jLabel3");
 
-        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\rayki\\Documents\\GitHub\\QuakeSide-Alert\\App\\src\\main\\java\\MyIcons\\login ui.png")); // NOI18N
         jLabel4.setText("jLabel4");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -165,7 +170,7 @@ public class LoginUI extends javax.swing.JFrame {
                     .addComponent(jButton1))
                 .addGap(18, 18, 18)
                 .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 293, Short.MAX_VALUE)
                 .addComponent(timeLab)
                 .addGap(25, 25, 25))
             .addGroup(jPanel2Layout.createSequentialGroup()
