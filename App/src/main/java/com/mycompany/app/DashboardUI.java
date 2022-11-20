@@ -19,24 +19,25 @@ import org.jfree.data.category.DefaultCategoryDataset;
 
 public class DashboardUI extends javax.swing.JFrame {
 
-    /**
-     * Creates new form DashboardUI
-     */
+    public int i;
+    public String whatRegion;
+    public String[] region1 = {"Batac City","2","3","4","5","6","7"};
+    public int[] region2 = {4,5,6,7,8,9,10};
+    public String[] region3 = {"7","8","9"};
+    public String test = region1[i];
     ImageIcon imageQuakeSlide = new ImageIcon("src\\main\\java\\MyIcons\\QuakeSlide.png");
     public void images(){
         jLabel4.setIcon(imageQuakeSlide);
     }
      public void barChart(){
- 
+         
         DefaultCategoryDataset barChartData = new DefaultCategoryDataset();
-        barChartData.setValue(2, "haha", "");
-        barChartData.setValue(15, "Contribution Amoount", "");
-        barChartData.setValue(3, "hahaa2", "");
-        barChartData.setValue(4, "haha2a2", "");
-        barChartData.setValue(6, "ha2ha22a", "");
-        barChartData.setValue(8, "hah22aa", "");
-        barChartData.setValue(1, "h2aha22a", "");
-        barChartData.setValue(4, "haha2a", "");
+        
+            for (i = 0 ; i < 5 ; i++){
+        barChartData.setValue(region2[i], region1[i], "");
+            }
+        
+        
         
         JFreeChart barChart = ChartFactory.createBarChart("DATA VIRTUALIZATION", "", "Occurance", barChartData, PlotOrientation.VERTICAL, rootPaneCheckingEnabled, rootPaneCheckingEnabled, rootPaneCheckingEnabled);
         CategoryPlot barchrt = barChart.getCategoryPlot();
@@ -106,16 +107,16 @@ public class DashboardUI extends javax.swing.JFrame {
         leftPanelLayout.setHorizontalGroup(
             leftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(leftPanelLayout.createSequentialGroup()
-                .addGap(57, 57, 57)
+                .addGap(51, 51, 51)
                 .addComponent(jButton1)
-                .addContainerGap(68, Short.MAX_VALUE))
+                .addContainerGap(74, Short.MAX_VALUE))
         );
         leftPanelLayout.setVerticalGroup(
             leftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(leftPanelLayout.createSequentialGroup()
-                .addGap(170, 170, 170)
+                .addGap(133, 133, 133)
                 .addComponent(jButton1)
-                .addContainerGap(465, Short.MAX_VALUE))
+                .addContainerGap(502, Short.MAX_VALUE))
         );
 
         centerPanel.setBackground(new java.awt.Color(36, 52, 71));
@@ -197,7 +198,10 @@ public class DashboardUI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        barChart();
+
+                barChart();
+            
+        
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
