@@ -173,7 +173,7 @@ public class ForgotPassword extends javax.swing.JFrame {
             String Pass = jTextField2.getText();
             Class.forName("com.mysql.jdbc.Driver");
             Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/quakedb","root","");
-            String sql ="update tb_users set PASSWORD=? where USERNAME=?";
+            String sql ="update tb_users1 set PASSWORD=? where USERNAME=?";
 
             
             if("".equals(Pass)){
