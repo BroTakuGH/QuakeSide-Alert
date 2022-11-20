@@ -9,6 +9,7 @@ import javax.swing.ImageIcon;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
+import java.awt.Component;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
 import org.jfree.chart.JFreeChart;
@@ -49,10 +50,11 @@ public class DashboardUI extends javax.swing.JFrame {
         panelChart.validate();
    
      }
-    public DashboardUI() {
+    public  DashboardUI() {
         initComponents();
         images();
         this.setSize(988, 645);
+        
     }
 
     /**
@@ -106,6 +108,9 @@ public class DashboardUI extends javax.swing.JFrame {
         leftPanel.setBackground(new java.awt.Color(20, 29, 38));
         leftPanel.setPreferredSize(new java.awt.Dimension(200, 300));
 
+        jPanel2.setBackground(new java.awt.Color(9, 13, 18));
+        jPanel2.setPreferredSize(new java.awt.Dimension(139, 657));
+
         jButton1.setText("jButton1");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -117,24 +122,26 @@ public class DashboardUI extends javax.swing.JFrame {
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(76, Short.MAX_VALUE)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(58, 58, 58)
                 .addComponent(jButton1)
-                .addGap(49, 49, 49))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(147, 147, 147)
+                .addGap(138, 138, 138)
                 .addComponent(jButton1)
-                .addContainerGap(488, Short.MAX_VALUE))
+                .addContainerGap(497, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout leftPanelLayout = new javax.swing.GroupLayout(leftPanel);
         leftPanel.setLayout(leftPanelLayout);
         leftPanelLayout.setHorizontalGroup(
             leftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(leftPanelLayout.createSequentialGroup()
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 200, Short.MAX_VALUE))
         );
         leftPanelLayout.setVerticalGroup(
             leftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -312,16 +319,16 @@ public class DashboardUI extends javax.swing.JFrame {
             
         
     }//GEN-LAST:event_jButton1ActionPerformed
-    int sizeX = 200;
+    int sizeX = 0;
     private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
     
-         if (sizeX == 200){
-         jPanel2.setSize(200, 657);
+         if (sizeX == 0){
+         jPanel2.setSize(0, 657);
          Thread th = new Thread(){
              @Override
              public void run(){
                  try {
-                     for (int h = 200;h >= 0; h--){
+                     for (int h = 0;h <= 200; h++){
                          Thread.sleep(1);
                          jPanel2.setSize(h,657);
                      }
