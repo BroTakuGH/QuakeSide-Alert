@@ -168,19 +168,22 @@ public class ForgotPassword extends javax.swing.JFrame {
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         try
         {
+            String Pass = jTextField2.getText();
             Class.forName("com.mysql.jdbc.Driver");
             Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/quakedb","root","");
             String sql ="update tb_users set PASSWORD=? where USERNAME=?";
 
-            PreparedStatement psmt = conn.prepareStatement(sql);
-            String Pass = jTextField2.getText();
+            
             if("".equals(Pass)){
                 JOptionPane.showMessageDialog(null,"Password/UserName Cannot Be Blank");
             }else{
-                psmt.setString(1, jTextField2.getText());
-                psmt.setString(2, jTextField1.getText());
+                PreparedStatement psmt = conn.prepareStatement(sql);
+                psmt.setString(1, jTextField1.getText());
+                psmt.setString(2, jTextField2.getText());
                 psmt.executeUpdate();
                 JOptionPane.showMessageDialog(null,"Password Updated");
+                setVisible(false);
+                new LoginUI().setVisible(true);
             }
         }
         catch(Exception e)
