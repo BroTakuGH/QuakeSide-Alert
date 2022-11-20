@@ -26,7 +26,7 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="mainWrapper" alignment="0" pref="605" max="32767" attributes="0"/>
+          <Component id="mainWrapper" alignment="0" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
@@ -193,7 +193,7 @@
             <Container class="javax.swing.JPanel" name="panelChart">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                  <Color blue="47" green="34" red="24" type="rgb"/>
                 </Property>
               </Properties>
 
