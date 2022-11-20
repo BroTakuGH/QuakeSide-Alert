@@ -224,7 +224,7 @@ try
         {
             Class.forName("com.mysql.jdbc.Driver");
             Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/quakedb","root","");
-            String sql ="insert into tb_users (USERNAME, PASSWORD, ADDRESS, EMAIL_ADDRESS)" + "values(?,?,?,?)";
+            String sql ="insert into tb_users1 (USERNAME, PASSWORD, ADDRESS, EMAIL_ADDRESS)" + "values(?,?,?,?)";
             
             String User = jTextField1.getText();
             String Pass = jPasswordField1.getText();
