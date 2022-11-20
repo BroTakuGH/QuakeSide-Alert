@@ -34,9 +34,7 @@ public class LoginUI extends javax.swing.JFrame {
     }
     public LoginUI() {
         initComponents();
-        Color col2 = new Color(36, 52, 71);
-        Color col = new Color(29, 41, 56);
-        jPanel2.setBackground(col);
+        
         
         
         //test
