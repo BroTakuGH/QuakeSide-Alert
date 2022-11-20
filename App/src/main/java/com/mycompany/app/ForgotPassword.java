@@ -84,9 +84,11 @@ public class ForgotPassword extends javax.swing.JFrame {
         });
 
         jTextField1.setBackground(new java.awt.Color(40, 42, 58));
+        jTextField1.setForeground(new java.awt.Color(255, 255, 255));
         jTextField1.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
 
         jTextField2.setBackground(new java.awt.Color(40, 42, 58));
+        jTextField2.setForeground(new java.awt.Color(255, 255, 255));
 
         jLabel2.setForeground(new java.awt.Color(190, 153, 125));
         jLabel2.setText("New Password");

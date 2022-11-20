@@ -65,9 +65,11 @@ public class CreateAccUI extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(20, 29, 38));
 
         jPasswordField1.setBackground(new java.awt.Color(40, 42, 58));
+        jPasswordField1.setForeground(new java.awt.Color(255, 255, 255));
         jPasswordField1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jTextField1.setBackground(new java.awt.Color(40, 42, 58));
+        jTextField1.setForeground(new java.awt.Color(255, 255, 255));
         jTextField1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jLabel1.setForeground(new java.awt.Color(190, 153, 125));
