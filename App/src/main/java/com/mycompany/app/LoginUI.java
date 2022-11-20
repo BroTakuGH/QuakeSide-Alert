@@ -206,6 +206,9 @@ public class LoginUI extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         try {
+            String User_Name = jTextField1.getText();
+            USERNAME.username = User_Name;
+            
             Class.forName("com.mysql.jdbc.Driver");
             Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/quakedb", "root", "");
             String sql = "select*from tb_users1 where USERNAME=? and PASSWORD=?";
