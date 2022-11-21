@@ -84,6 +84,7 @@ public class CreateAccUI extends javax.swing.JFrame {
 
         jButton2.setBackground(new java.awt.Color(102, 255, 255));
         jButton2.setText("CREATE ACCOUNT");
+        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
@@ -92,6 +93,7 @@ public class CreateAccUI extends javax.swing.JFrame {
 
         jButton1.setBackground(new java.awt.Color(250, 208, 44));
         jButton1.setText("Login Here");
+        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
