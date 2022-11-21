@@ -20,6 +20,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import javax.swing.JLabel;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
 import org.jfree.chart.JFreeChart;
@@ -33,7 +34,7 @@ import javax.swing.table.TableColumnModel;
 
 
 public class DashboardUI extends javax.swing.JFrame {
-
+    
     public int i;
     public boolean open;
     public String whatRegion;
@@ -41,6 +42,7 @@ public class DashboardUI extends javax.swing.JFrame {
     public int[] region2 = {4,5,6,7,8,9,10};
     public String[] region3 = {"7","8","9"};
     public String test = region1[i];
+
     //DATE
     DateFormat dateFormat = new SimpleDateFormat("MM/dd/YY");
     Date date = new Date();
@@ -73,13 +75,17 @@ public class DashboardUI extends javax.swing.JFrame {
    
      }
     public DashboardUI() {
+
         initComponents();
-        time();
+
         images();
         this.setSize(988, 645);
         scaleImage();
         model = (DefaultTableModel) jTable1.getModel();
         DATE.setText(dateFormat.format(date));
+
+
+        
         try {
             String User_Name = USERNAME.username;
             Class.forName("com.mysql.jdbc.Driver");
@@ -707,7 +713,7 @@ public class DashboardUI extends javax.swing.JFrame {
              @Override
              public void run(){
                  try {
-                     for (int h = 0; h >= 657; h++){
+                     for (int h = 657; h >= 0; h--){
                          Thread.sleep(1);
                          jPanel2.setSize(200,h);
                          jPanel3.setSize(200,h);
@@ -780,18 +786,7 @@ public class DashboardUI extends javax.swing.JFrame {
         columnModel.getColumn(2).setPreferredWidth(30);
         columnModel.getColumn(3).setPreferredWidth(200);
     }//GEN-LAST:event_jLabel5MouseClicked
-void time() {
-        new Timer(0, new ActionListener(){
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                Date d = new Date();
-                SimpleDateFormat s = new SimpleDateFormat("hh:mm:ss:a");
-                TIME.setText(s.format(d));
-            }
-        }
-        ).start();
-        
-    }
+
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
     try {
             String User_Name = USERNAME.username;
