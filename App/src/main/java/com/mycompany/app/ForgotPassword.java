@@ -68,6 +68,7 @@ public class ForgotPassword extends javax.swing.JFrame {
 
         jButton1.setBackground(new java.awt.Color(255, 153, 0));
         jButton1.setText("Log In Page");
+        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -77,6 +78,7 @@ public class ForgotPassword extends javax.swing.JFrame {
         jButton3.setBackground(new java.awt.Color(250, 208, 44));
         jButton3.setText("Change Password");
         jButton3.setBorder(null);
+        jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
