@@ -33,7 +33,7 @@ import javax.swing.table.TableColumnModel;
 
 
 public class DashboardUI extends javax.swing.JFrame {
-
+    
     public int i;
     public boolean open;
     public String whatRegion;
@@ -74,12 +74,12 @@ public class DashboardUI extends javax.swing.JFrame {
      }
     public DashboardUI() {
         initComponents();
-        time();
+        DateTime.setValues();
         images();
         this.setSize(988, 645);
         scaleImage();
         model = (DefaultTableModel) jTable1.getModel();
-        DATE.setText(dateFormat.format(date));
+        
         try {
             String User_Name = USERNAME.username;
             Class.forName("com.mysql.jdbc.Driver");
@@ -739,6 +739,7 @@ public class DashboardUI extends javax.swing.JFrame {
                          Thread.sleep(1);
                          jPanel2.setSize(200,h);
                          jPanel3.setSize(200,h);
+                         time();
                      }
                  } catch (Exception e){
                      JOptionPane.showMessageDialog(null, e);
@@ -747,7 +748,7 @@ public class DashboardUI extends javax.swing.JFrame {
 
          };th.start();
      }
-        
+    
     panelChart.removeAll();
     panelChart.add(jPanel1);
     panelChart.repaint();
@@ -820,30 +821,8 @@ void time() {
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(DashboardUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(DashboardUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(DashboardUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(DashboardUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
+        App.access = true;
+        
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new DashboardUI().setVisible(true);
@@ -852,9 +831,9 @@ void time() {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel DATE;
+    public static javax.swing.JLabel DATE;
     private javax.swing.JTextField REPORT;
-    private javax.swing.JLabel TIME;
+    public static javax.swing.JLabel TIME;
     private javax.swing.JPanel centerPanel;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
