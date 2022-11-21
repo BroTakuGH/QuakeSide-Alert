@@ -307,7 +307,7 @@ public class DashboardUI extends javax.swing.JFrame {
             leftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(leftPanelLayout.createSequentialGroup()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(657, Short.MAX_VALUE))
+                .addGap(0, 657, Short.MAX_VALUE))
         );
 
         centerPanel.setBackground(new java.awt.Color(36, 52, 71));
@@ -701,19 +701,17 @@ public class DashboardUI extends javax.swing.JFrame {
 
      } else if (open == true){
          jPanel2.show();
-         jPanel2.setSize(200,657);
          open = false;
          System.out.println(open);
          Thread th = new Thread(){
              @Override
              public void run(){
                  try {
-                     for (int h = 657; h >= 0; h--){
+                     for (int h = 0; h >= 657; h++){
                          Thread.sleep(1);
                          jPanel2.setSize(200,h);
                          jPanel3.setSize(200,h);
                      }
-                     jPanel2.setSize(200,657);
                  } catch (Exception e){
                      JOptionPane.showMessageDialog(null, e);
                  }
