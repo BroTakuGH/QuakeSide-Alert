@@ -39,7 +39,7 @@ public class DashboardUI extends javax.swing.JFrame {
     public boolean open;
     public String whatRegion;
     public String[] region1 = {"Batac City","2","3","4","5","6","7"};
-    public int[] region2 = {4,5,6,7,8,9,10};
+    public double[] region2 = {4,5.5,6,7,8,9.5,10};
     public String[] region3 = {"7","8","9"};
     public String test = region1[i];
 
@@ -56,22 +56,7 @@ public class DashboardUI extends javax.swing.JFrame {
     }
      public void barChart(){
          
-        DefaultCategoryDataset barChartData = new DefaultCategoryDataset();
         
-            for (i = 0 ; i < 5 ; i++){
-        barChartData.setValue(region2[i], region1[i], "");
-            }
-        
-        
-        
-        JFreeChart barChart = ChartFactory.createBarChart("DATA VIRTUALIZATION", "", "Occurance", barChartData, PlotOrientation.VERTICAL, rootPaneCheckingEnabled, rootPaneCheckingEnabled, rootPaneCheckingEnabled);
-        CategoryPlot barchrt = barChart.getCategoryPlot();
-        barchrt.setRangeGridlinePaint(new Color(20,29,38));
-        barchrt.setBackgroundPaint(new Color(36, 52, 71));
-        ChartPanel barPanel = new ChartPanel (barChart);
-        panelChart.removeAll();
-        panelChart.add(barPanel,BorderLayout.CENTER);
-        panelChart.validate();
    
      }
     public DashboardUI() {
@@ -79,7 +64,7 @@ public class DashboardUI extends javax.swing.JFrame {
         initComponents();
 
         images();
-        this.setSize(988, 645);
+        this.setSize(988, 657);
         scaleImage();
         model = (DefaultTableModel) jTable1.getModel();
         DATE.setText(dateFormat.format(date));
@@ -209,7 +194,19 @@ public class DashboardUI extends javax.swing.JFrame {
         jPanel3 = new javax.swing.JPanel();
         leftPanel = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
+        Region1 = new javax.swing.JButton();
+        Region2 = new javax.swing.JButton();
+        Region3 = new javax.swing.JButton();
+        Region4 = new javax.swing.JButton();
+        Region5 = new javax.swing.JButton();
+        Region6 = new javax.swing.JButton();
+        Region7 = new javax.swing.JButton();
+        Region8 = new javax.swing.JButton();
+        Region9 = new javax.swing.JButton();
+        Region10 = new javax.swing.JButton();
+        Region11 = new javax.swing.JButton();
+        Region12 = new javax.swing.JButton();
+        Region13 = new javax.swing.JButton();
         centerPanel = new javax.swing.JPanel();
         navbar = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
@@ -217,11 +214,6 @@ public class DashboardUI extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         panelChart = new javax.swing.JPanel();
-        jPanel4 = new javax.swing.JPanel();
-        REPORT = new javax.swing.JTextField();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
-        jButton5 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
@@ -236,6 +228,11 @@ public class DashboardUI extends javax.swing.JFrame {
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jLabel11 = new javax.swing.JLabel();
+        jPanel4 = new javax.swing.JPanel();
+        REPORT = new javax.swing.JTextField();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
+        jButton5 = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         DATE = new javax.swing.JLabel();
         TIME = new javax.swing.JLabel();
@@ -279,10 +276,121 @@ public class DashboardUI extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(11, 17, 23));
 
-        jButton1.setText("jButton1");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        Region1.setBackground(new java.awt.Color(255, 204, 0));
+        Region1.setText("Region1");
+        Region1.setActionCommand("Region I");
+        Region1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Region1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                Region1ActionPerformed(evt);
+            }
+        });
+
+        Region2.setBackground(new java.awt.Color(255, 204, 0));
+        Region2.setText("Region2");
+        Region2.setActionCommand("Region I");
+        Region2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Region2ActionPerformed(evt);
+            }
+        });
+
+        Region3.setBackground(new java.awt.Color(255, 204, 0));
+        Region3.setText("Region2");
+        Region3.setActionCommand("Region I");
+        Region3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Region3ActionPerformed(evt);
+            }
+        });
+
+        Region4.setBackground(new java.awt.Color(255, 204, 0));
+        Region4.setText("Region2");
+        Region4.setActionCommand("Region I");
+        Region4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Region4ActionPerformed(evt);
+            }
+        });
+
+        Region5.setBackground(new java.awt.Color(255, 204, 0));
+        Region5.setText("Region2");
+        Region5.setActionCommand("Region I");
+        Region5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Region5ActionPerformed(evt);
+            }
+        });
+
+        Region6.setBackground(new java.awt.Color(255, 204, 0));
+        Region6.setText("Region2");
+        Region6.setActionCommand("Region I");
+        Region6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Region6ActionPerformed(evt);
+            }
+        });
+
+        Region7.setBackground(new java.awt.Color(255, 204, 0));
+        Region7.setText("Region2");
+        Region7.setActionCommand("Region I");
+        Region7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Region7ActionPerformed(evt);
+            }
+        });
+
+        Region8.setBackground(new java.awt.Color(255, 204, 0));
+        Region8.setText("Region2");
+        Region8.setActionCommand("Region I");
+        Region8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Region8ActionPerformed(evt);
+            }
+        });
+
+        Region9.setBackground(new java.awt.Color(255, 204, 0));
+        Region9.setText("Region2");
+        Region9.setActionCommand("Region I");
+        Region9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Region9ActionPerformed(evt);
+            }
+        });
+
+        Region10.setBackground(new java.awt.Color(255, 204, 0));
+        Region10.setText("Region2");
+        Region10.setActionCommand("Region I");
+        Region10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Region10ActionPerformed(evt);
+            }
+        });
+
+        Region11.setBackground(new java.awt.Color(255, 204, 0));
+        Region11.setText("Region2");
+        Region11.setActionCommand("Region I");
+        Region11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Region11ActionPerformed(evt);
+            }
+        });
+
+        Region12.setBackground(new java.awt.Color(255, 204, 0));
+        Region12.setText("Region2");
+        Region12.setActionCommand("Region I");
+        Region12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Region12ActionPerformed(evt);
+            }
+        });
+
+        Region13.setBackground(new java.awt.Color(255, 204, 0));
+        Region13.setText("Region21");
+        Region13.setActionCommand("Region I");
+        Region13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Region13ActionPerformed(evt);
             }
         });
 
@@ -290,17 +398,54 @@ public class DashboardUI extends javax.swing.JFrame {
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(76, Short.MAX_VALUE)
-                .addComponent(jButton1)
-                .addGap(49, 49, 49))
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(42, 42, 42)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Region1)
+                    .addComponent(Region12)
+                    .addComponent(Region13)
+                    .addComponent(Region11)
+                    .addComponent(Region10)
+                    .addComponent(Region9)
+                    .addComponent(Region8)
+                    .addComponent(Region7)
+                    .addComponent(Region6)
+                    .addComponent(Region5)
+                    .addComponent(Region4)
+                    .addComponent(Region3)
+                    .addComponent(Region2))
+                .addContainerGap(79, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(147, 147, 147)
-                .addComponent(jButton1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(94, Short.MAX_VALUE)
+                .addComponent(Region1)
+                .addGap(18, 18, 18)
+                .addComponent(Region2)
+                .addGap(18, 18, 18)
+                .addComponent(Region3)
+                .addGap(18, 18, 18)
+                .addComponent(Region4)
+                .addGap(18, 18, 18)
+                .addComponent(Region5)
+                .addGap(18, 18, 18)
+                .addComponent(Region6)
+                .addGap(18, 18, 18)
+                .addComponent(Region7)
+                .addGap(18, 18, 18)
+                .addComponent(Region8)
+                .addGap(18, 18, 18)
+                .addComponent(Region9)
+                .addGap(18, 18, 18)
+                .addComponent(Region10)
+                .addGap(18, 18, 18)
+                .addComponent(Region11)
+                .addGap(18, 18, 18)
+                .addComponent(Region12)
+                .addGap(18, 18, 18)
+                .addComponent(Region13)
+                .addGap(61, 61, 61))
         );
 
         javax.swing.GroupLayout leftPanelLayout = new javax.swing.GroupLayout(leftPanel);
@@ -311,9 +456,7 @@ public class DashboardUI extends javax.swing.JFrame {
         );
         leftPanelLayout.setVerticalGroup(
             leftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(leftPanelLayout.createSequentialGroup()
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 657, Short.MAX_VALUE))
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         centerPanel.setBackground(new java.awt.Color(36, 52, 71));
@@ -386,70 +529,6 @@ public class DashboardUI extends javax.swing.JFrame {
 
         panelChart.setBackground(new java.awt.Color(36, 52, 71));
         panelChart.setLayout(new java.awt.CardLayout());
-
-        jPanel4.setBackground(new java.awt.Color(20, 29, 38));
-
-        REPORT.setBackground(new java.awt.Color(36, 52, 71));
-        REPORT.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        jTable1.setBackground(new java.awt.Color(36, 52, 71));
-        jTable1.setForeground(new java.awt.Color(20, 29, 38));
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-
-            },
-            new String [] {
-                "Date & Time", "City", "Username", "Report"
-            }
-        ) {
-            boolean[] canEdit = new boolean [] {
-                false, false, true, false
-            };
-
-            public boolean isCellEditable(int rowIndex, int columnIndex) {
-                return canEdit [columnIndex];
-            }
-        });
-        jScrollPane1.setViewportView(jTable1);
-
-        jButton5.setBackground(new java.awt.Color(255, 204, 0));
-        jButton5.setText("Enter");
-        jButton5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addComponent(jScrollPane1)
-                        .addContainerGap())
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addComponent(REPORT, javax.swing.GroupLayout.PREFERRED_SIZE, 446, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 35, Short.MAX_VALUE)
-                        .addComponent(jButton5)
-                        .addGap(17, 17, 17))))
-        );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGap(16, 16, 16)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(REPORT, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton5))
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 334, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-
-        panelChart.add(jPanel4, "card3");
 
         jPanel1.setBackground(new java.awt.Color(36, 52, 71));
 
@@ -593,10 +672,74 @@ public class DashboardUI extends javax.swing.JFrame {
                         .addComponent(jLabel8)))
                 .addGap(52, 52, 52)
                 .addComponent(jButton2)
-                .addContainerGap(37, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         panelChart.add(jPanel1, "card2");
+
+        jPanel4.setBackground(new java.awt.Color(20, 29, 38));
+
+        REPORT.setBackground(new java.awt.Color(36, 52, 71));
+        REPORT.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        jTable1.setBackground(new java.awt.Color(36, 52, 71));
+        jTable1.setForeground(new java.awt.Color(20, 29, 38));
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Date & Time", "City", "Username", "Report"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, true, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane1.setViewportView(jTable1);
+
+        jButton5.setBackground(new java.awt.Color(255, 204, 0));
+        jButton5.setText("Enter");
+        jButton5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addComponent(jScrollPane1)
+                        .addContainerGap())
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addComponent(REPORT, javax.swing.GroupLayout.PREFERRED_SIZE, 446, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 35, Short.MAX_VALUE)
+                        .addComponent(jButton5)
+                        .addGap(17, 17, 17))))
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGap(16, 16, 16)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(REPORT, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton5))
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 276, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        panelChart.add(jPanel4, "card3");
 
         DATE.setForeground(new java.awt.Color(255, 255, 255));
         DATE.setText("DATE");
@@ -638,8 +781,8 @@ public class DashboardUI extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(TIME)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE)
-                .addComponent(panelChart, javax.swing.GroupLayout.PREFERRED_SIZE, 396, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(55, 55, 55))
+                .addComponent(panelChart, javax.swing.GroupLayout.PREFERRED_SIZE, 338, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(113, 113, 113))
         );
 
         javax.swing.GroupLayout mainWrapperLayout = new javax.swing.GroupLayout(mainWrapper);
@@ -674,12 +817,27 @@ public class DashboardUI extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void Region1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Region1ActionPerformed
 
-                barChart();
+                DefaultCategoryDataset barChartData = new DefaultCategoryDataset();
+        
+            for (i = 0 ; i < 5 ; i++){
+        barChartData.setValue(region2[i], region1[i], "");
+            }
+        
+        
+        
+        JFreeChart barChart = ChartFactory.createBarChart("DATA VIRTUALIZATION"," ", "Occurance", barChartData, PlotOrientation.VERTICAL, rootPaneCheckingEnabled, rootPaneCheckingEnabled, rootPaneCheckingEnabled);
+        CategoryPlot barchrt = barChart.getCategoryPlot();
+        barchrt.setRangeGridlinePaint(Color.WHITE);
+        barchrt.setBackgroundPaint(new Color(36, 52, 71));
+        ChartPanel barPanel = new ChartPanel (barChart);
+        panelChart.removeAll();
+        panelChart.add(barPanel,BorderLayout.CENTER);
+        panelChart.validate();
             
         
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_Region1ActionPerformed
     int sizeY = 657;
     private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
         
@@ -810,6 +968,54 @@ public class DashboardUI extends javax.swing.JFrame {
         }
                // TODO add your handling code here:
     }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void Region2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Region2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Region2ActionPerformed
+
+    private void Region3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Region3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Region3ActionPerformed
+
+    private void Region4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Region4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Region4ActionPerformed
+
+    private void Region5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Region5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Region5ActionPerformed
+
+    private void Region6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Region6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Region6ActionPerformed
+
+    private void Region7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Region7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Region7ActionPerformed
+
+    private void Region8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Region8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Region8ActionPerformed
+
+    private void Region9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Region9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Region9ActionPerformed
+
+    private void Region10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Region10ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Region10ActionPerformed
+
+    private void Region11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Region11ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Region11ActionPerformed
+
+    private void Region12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Region12ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Region12ActionPerformed
+
+    private void Region13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Region13ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Region13ActionPerformed
        
     /**
      * @param args the command line arguments
@@ -849,9 +1055,21 @@ public class DashboardUI extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel DATE;
     private javax.swing.JTextField REPORT;
+    private javax.swing.JButton Region1;
+    private javax.swing.JButton Region10;
+    private javax.swing.JButton Region11;
+    private javax.swing.JButton Region12;
+    private javax.swing.JButton Region13;
+    private javax.swing.JButton Region2;
+    private javax.swing.JButton Region3;
+    private javax.swing.JButton Region4;
+    private javax.swing.JButton Region5;
+    private javax.swing.JButton Region6;
+    private javax.swing.JButton Region7;
+    private javax.swing.JButton Region8;
+    private javax.swing.JButton Region9;
     private javax.swing.JLabel TIME;
     private javax.swing.JPanel centerPanel;
-    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
