@@ -38,9 +38,39 @@ public class DashboardUI extends javax.swing.JFrame {
     public int i;
     public boolean open;
     public String whatRegion;
-    public String[] region1 = {"Batac City","2","3","4","5","6","7"};
-    public double[] region2 = {4,5.5,6,7,8,9.5,10};
-    public String[] region3 = {"7","8","9"};
+    public String[] region1 = {"Batac City","Laoag City","Candon City","Vigan City","San Fernando City","Alaminos City","Dagupan City","San Carlos City","Urdaneta City"};
+    public String[] region2 = {"Tuguegarao City","Cauayan City","Ilagan City","Santiago City",};
+    public String[] region3 = {"Balanga City","Malolos City","Meycauayan City","San Jose del Monte City","Cabanatuan City","Gapan City","Muñoz City","Palayan City","Angeles City","Mabalacat City","San Fernando City","Tarlac City","Olongapo City","San Jose City"};
+    public String[] region4 = {"Batangas City","Lipa City","Tanauan City","Bacoor City","Cavite City","Dasmariñas City","Imus City","Tagaytay City","Trece Martires City","Biñan City","Cabuyao City","San Pablo City","Santa Rosa City","Lucena City","Lucena City","Antipolo City","Calamba City"};
+    public String[] region5 = {"Legazpi City","Ligao City","Tabaco City","Iriga City","Naga City","Masbate City","Sorsogon City","Calapan City"};
+    public String[] region6 = {"Roxas City","Iloilo City","Passi City","Bacolod City","Bago City","Cadiz City","Escalante City","Himamaylan City","Kabankalan City","La Carlota City","Sagay City","San Carlos City","Silay City","Sipalay City","Talisay City","Victorias City"};
+    public String[] region7 = {"Tagbilaran City","Bogo City","Carcar City","Cebu City","Danao City","Lapu-Lapu City","Mandaue City","Naga City","Talisay City","Bais City","Bayawan City","Canlaon City","Dumaguete City","Guihulngan City","Tanjay City","Toledo City"};
+    public String[] region8 = {"Borongan City","Baybay City","Ormoc City","Tacloban City","Calbayog City","Catbalogan City","Maasin City"};
+    public String[] region9 = {"Dipolog City","Dapitan City","Isabela City","Pagadian City","Zamboanga City"};
+    public String[] region10 = {"Cagayan de Oro","El Salvador","Gingoog","Malaybalay","Valencia","Oroquieta","Ozamiz","Tangub","Iligan"};
+    public String[] region11 = {"Panabo City","Samal City","Tagum City","Davao City","Digos City","Mati City"};
+    public String[] region12 = {"GENERAL SANTOS","COTABATO","KORONADAL","TACURONG","KIDAPAWAN"};
+    public String[] region13 = {"Bayugan","Butuan","Cabadbaran","Surigao","Tandag","Bislig"};
+    public String[] NCR = {"Caloocan","Malabon","Navotas","Valenzuela","Quezon City","Marikina","Pasig","Taguig","Makati","Manila","Mandaluyong","San Juan","Pasay","Parañaque","Las Piñas","Muntinlupa"};
+    public String[] CAR = {"Baguio","Tabuk"};
+    public String[] BARMM = {"Cotabato"};
+    
+    public double[] magnitude1 = {4.6,4.1,4.1,2.0,5.1,4.1,5.1,2.0,2.3};
+    public double[] magnitude2 = {4.1,4.1,4.1,5.1};
+    public double[] magnitude3 = {5.1,5.1,5.1,5.1,5.1,1.8,2.2,2.2,1.7,2.5,1.7,5.1,2.9,2.2};
+    public double[] magnitude4 = {1.7,1.7,1.7,1.7,1.7,1.7,1.7,1.7,1.7,1.7,1.7,1.7,1.7,1.7,1.7,1.7,1.7,1.7};
+    public double[] magnitude5 = {1.8,1.8,1.8,1.8,1.8,1.8,1.8,1.8};
+    public double[] magnitude6 = {2.1,2.1,2.1,2.1,2.1,1.8,1.8,2.1,2.1,2.1,1.8,2.0,1.8,2.8,2.4,1.8};
+    public double[] magnitude7 = {2.4,2.4,1.8,2.4,2.4,2.4,2.4,2.4,2.4,2.1,2.5,2.5,2.5,2.5,4.2,2.5};
+    public double[] magnitude8 = {2.4,2.4,2.4,2.4,1.8,2.4,2.4};
+    public double[] magnitude9 = {5.8,7.1,4.8,6.3,8.1};
+    public double[] magnitude10 = {7.0,5.0,3.0,4.0,4.0,5.6,5.9,4.0,3.0};
+    public double[] magnitude11 = {5.0,3.0,2.0,5.6,6.0,4.7};
+    public double[] magnitude12 = {6.7,6.0,5.0,3.0,7.0};
+    public double[] magnitude13 = {4.5,3.4,4.3,3.2,2.3,1.8};
+    public double[] magnitude14 = {8.0,7.0,7.4,5.0,4.6,6.7,6.3,7.1,3.2,4.5,7.8,6.7,5.4,5.3,4.3,3.2};
+    public double[] magnitude15 = {5.0,3.8};
+    public double[] magnitude16 = {5.3};
     public String test = region1[i];
 
     //DATE
@@ -207,6 +237,9 @@ public class DashboardUI extends javax.swing.JFrame {
         Region11 = new javax.swing.JButton();
         Region12 = new javax.swing.JButton();
         Region13 = new javax.swing.JButton();
+        Region14 = new javax.swing.JButton();
+        Region15 = new javax.swing.JButton();
+        Region16 = new javax.swing.JButton();
         centerPanel = new javax.swing.JPanel();
         navbar = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
@@ -394,58 +427,100 @@ public class DashboardUI extends javax.swing.JFrame {
             }
         });
 
+        Region14.setBackground(new java.awt.Color(255, 204, 0));
+        Region14.setText("Region21");
+        Region14.setActionCommand("Region I");
+        Region14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Region14ActionPerformed(evt);
+            }
+        });
+
+        Region15.setBackground(new java.awt.Color(255, 204, 0));
+        Region15.setText("Region21");
+        Region15.setActionCommand("Region I");
+        Region15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Region15ActionPerformed(evt);
+            }
+        });
+
+        Region16.setBackground(new java.awt.Color(255, 204, 0));
+        Region16.setText("Region21");
+        Region16.setActionCommand("Region I");
+        Region16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Region16ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(42, 42, 42)
+                .addGap(18, 18, 18)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Region1)
-                    .addComponent(Region12)
-                    .addComponent(Region13)
-                    .addComponent(Region11)
-                    .addComponent(Region10)
-                    .addComponent(Region9)
-                    .addComponent(Region8)
-                    .addComponent(Region7)
-                    .addComponent(Region6)
-                    .addComponent(Region5)
-                    .addComponent(Region4)
-                    .addComponent(Region3)
-                    .addComponent(Region2))
-                .addContainerGap(79, Short.MAX_VALUE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(Region8)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(Region16, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(Region3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Region4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Region5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Region6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Region7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Region1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Region2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(Region14, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Region15, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Region9)
+                            .addComponent(Region10)
+                            .addComponent(Region11)
+                            .addComponent(Region12)
+                            .addComponent(Region13, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(24, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap(94, Short.MAX_VALUE)
-                .addComponent(Region1)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Region1)
+                    .addComponent(Region9))
                 .addGap(18, 18, 18)
-                .addComponent(Region2)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Region2)
+                    .addComponent(Region10))
                 .addGap(18, 18, 18)
-                .addComponent(Region3)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Region3)
+                    .addComponent(Region11))
                 .addGap(18, 18, 18)
-                .addComponent(Region4)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Region4)
+                    .addComponent(Region12))
                 .addGap(18, 18, 18)
-                .addComponent(Region5)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Region5)
+                    .addComponent(Region13))
                 .addGap(18, 18, 18)
-                .addComponent(Region6)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Region6)
+                    .addComponent(Region14))
                 .addGap(18, 18, 18)
-                .addComponent(Region7)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Region7)
+                    .addComponent(Region15))
                 .addGap(18, 18, 18)
-                .addComponent(Region8)
-                .addGap(18, 18, 18)
-                .addComponent(Region9)
-                .addGap(18, 18, 18)
-                .addComponent(Region10)
-                .addGap(18, 18, 18)
-                .addComponent(Region11)
-                .addGap(18, 18, 18)
-                .addComponent(Region12)
-                .addGap(18, 18, 18)
-                .addComponent(Region13)
-                .addGap(61, 61, 61))
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Region8)
+                    .addComponent(Region16))
+                .addGap(261, 261, 261))
         );
 
         javax.swing.GroupLayout leftPanelLayout = new javax.swing.GroupLayout(leftPanel);
@@ -821,8 +896,8 @@ public class DashboardUI extends javax.swing.JFrame {
 
                 DefaultCategoryDataset barChartData = new DefaultCategoryDataset();
         
-            for (i = 0 ; i < 5 ; i++){
-        barChartData.setValue(region2[i], region1[i], "");
+            for (i = 0 ; i < region1.length; i++){
+        barChartData.setValue(magnitude1[i], region1[i], "");
             }
         
         
@@ -838,7 +913,7 @@ public class DashboardUI extends javax.swing.JFrame {
             
         
     }//GEN-LAST:event_Region1ActionPerformed
-    int sizeY = 657;
+
     private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
         
          if (open == false){
@@ -970,52 +1045,291 @@ public class DashboardUI extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void Region2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Region2ActionPerformed
+
+        DefaultCategoryDataset barChartData = new DefaultCategoryDataset();
+        
+            for (i = 0 ; i < region2.length; i++){
+        barChartData.setValue(magnitude2[i], region2[i], "");
+            }
+        
+        
+        
+        JFreeChart barChart = ChartFactory.createBarChart("DATA VIRTUALIZATION"," ", "Occurance", barChartData, PlotOrientation.VERTICAL, rootPaneCheckingEnabled, rootPaneCheckingEnabled, rootPaneCheckingEnabled);
+        CategoryPlot barchrt = barChart.getCategoryPlot();
+        barchrt.setRangeGridlinePaint(Color.WHITE);
+        barchrt.setBackgroundPaint(new Color(36, 52, 71));
+        ChartPanel barPanel = new ChartPanel (barChart);
+        panelChart.removeAll();
+        panelChart.add(barPanel,BorderLayout.CENTER);
+        panelChart.validate();  
         // TODO add your handling code here:
     }//GEN-LAST:event_Region2ActionPerformed
 
     private void Region3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Region3ActionPerformed
-        // TODO add your handling code here:
+DefaultCategoryDataset barChartData = new DefaultCategoryDataset();
+        
+            for (i = 0 ; i < region3.length; i++){
+        barChartData.setValue(magnitude3[i], region3[i], "");
+            }
+        
+        
+        
+        JFreeChart barChart = ChartFactory.createBarChart("DATA VIRTUALIZATION"," ", "Occurance", barChartData, PlotOrientation.VERTICAL, rootPaneCheckingEnabled, rootPaneCheckingEnabled, rootPaneCheckingEnabled);
+        CategoryPlot barchrt = barChart.getCategoryPlot();
+        barchrt.setRangeGridlinePaint(Color.WHITE);
+        barchrt.setBackgroundPaint(new Color(36, 52, 71));
+        ChartPanel barPanel = new ChartPanel (barChart);
+        panelChart.removeAll();
+        panelChart.add(barPanel,BorderLayout.CENTER);
+        panelChart.validate();        // TODO add your handling code here:
     }//GEN-LAST:event_Region3ActionPerformed
 
     private void Region4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Region4ActionPerformed
-        // TODO add your handling code here:
+DefaultCategoryDataset barChartData = new DefaultCategoryDataset();
+        
+            for (i = 0 ; i < region4.length; i++){
+        barChartData.setValue(magnitude4[i], region4[i], "");
+            }
+        
+        
+        
+        JFreeChart barChart = ChartFactory.createBarChart("DATA VIRTUALIZATION"," ", "Occurance", barChartData, PlotOrientation.VERTICAL, rootPaneCheckingEnabled, rootPaneCheckingEnabled, rootPaneCheckingEnabled);
+        CategoryPlot barchrt = barChart.getCategoryPlot();
+        barchrt.setRangeGridlinePaint(Color.WHITE);
+        barchrt.setBackgroundPaint(new Color(36, 52, 71));
+        ChartPanel barPanel = new ChartPanel (barChart);
+        panelChart.removeAll();
+        panelChart.add(barPanel,BorderLayout.CENTER);
+        panelChart.validate();        // TODO add your handling code here:
     }//GEN-LAST:event_Region4ActionPerformed
 
     private void Region5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Region5ActionPerformed
-        // TODO add your handling code here:
+DefaultCategoryDataset barChartData = new DefaultCategoryDataset();
+        
+            for (i = 0 ; i < region5.length; i++){
+        barChartData.setValue(magnitude5[i], region5[i], "");
+            }
+        
+        
+        
+        JFreeChart barChart = ChartFactory.createBarChart("DATA VIRTUALIZATION"," ", "Occurance", barChartData, PlotOrientation.VERTICAL, rootPaneCheckingEnabled, rootPaneCheckingEnabled, rootPaneCheckingEnabled);
+        CategoryPlot barchrt = barChart.getCategoryPlot();
+        barchrt.setRangeGridlinePaint(Color.WHITE);
+        barchrt.setBackgroundPaint(new Color(36, 52, 71));
+        ChartPanel barPanel = new ChartPanel (barChart);
+        panelChart.removeAll();
+        panelChart.add(barPanel,BorderLayout.CENTER);
+        panelChart.validate();        // TODO add your handling code here:
     }//GEN-LAST:event_Region5ActionPerformed
 
     private void Region6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Region6ActionPerformed
-        // TODO add your handling code here:
+DefaultCategoryDataset barChartData = new DefaultCategoryDataset();
+        
+            for (i = 0 ; i < region6.length; i++){
+        barChartData.setValue(magnitude6[i], region6[i], "");
+            }
+        
+        
+        
+        JFreeChart barChart = ChartFactory.createBarChart("DATA VIRTUALIZATION"," ", "Occurance", barChartData, PlotOrientation.VERTICAL, rootPaneCheckingEnabled, rootPaneCheckingEnabled, rootPaneCheckingEnabled);
+        CategoryPlot barchrt = barChart.getCategoryPlot();
+        barchrt.setRangeGridlinePaint(Color.WHITE);
+        barchrt.setBackgroundPaint(new Color(36, 52, 71));
+        ChartPanel barPanel = new ChartPanel (barChart);
+        panelChart.removeAll();
+        panelChart.add(barPanel,BorderLayout.CENTER);
+        panelChart.validate();        // TODO add your handling code here:
     }//GEN-LAST:event_Region6ActionPerformed
 
     private void Region7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Region7ActionPerformed
-        // TODO add your handling code here:
+DefaultCategoryDataset barChartData = new DefaultCategoryDataset();
+        
+            for (i = 0 ; i < region7.length; i++){
+        barChartData.setValue(magnitude7[i], region7[i], "");
+            }
+        
+        
+        
+        JFreeChart barChart = ChartFactory.createBarChart("DATA VIRTUALIZATION"," ", "Occurance", barChartData, PlotOrientation.VERTICAL, rootPaneCheckingEnabled, rootPaneCheckingEnabled, rootPaneCheckingEnabled);
+        CategoryPlot barchrt = barChart.getCategoryPlot();
+        barchrt.setRangeGridlinePaint(Color.WHITE);
+        barchrt.setBackgroundPaint(new Color(36, 52, 71));
+        ChartPanel barPanel = new ChartPanel (barChart);
+        panelChart.removeAll();
+        panelChart.add(barPanel,BorderLayout.CENTER);
+        panelChart.validate();        // TODO add your handling code here:
     }//GEN-LAST:event_Region7ActionPerformed
 
     private void Region8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Region8ActionPerformed
-        // TODO add your handling code here:
+DefaultCategoryDataset barChartData = new DefaultCategoryDataset();
+        
+            for (i = 0 ; i < region8.length; i++){
+        barChartData.setValue(magnitude8[i], region8[i], "");
+            }
+        
+        
+        
+        JFreeChart barChart = ChartFactory.createBarChart("DATA VIRTUALIZATION"," ", "Occurance", barChartData, PlotOrientation.VERTICAL, rootPaneCheckingEnabled, rootPaneCheckingEnabled, rootPaneCheckingEnabled);
+        CategoryPlot barchrt = barChart.getCategoryPlot();
+        barchrt.setRangeGridlinePaint(Color.WHITE);
+        barchrt.setBackgroundPaint(new Color(36, 52, 71));
+        ChartPanel barPanel = new ChartPanel (barChart);
+        panelChart.removeAll();
+        panelChart.add(barPanel,BorderLayout.CENTER);
+        panelChart.validate();        // TODO add your handling code here:
     }//GEN-LAST:event_Region8ActionPerformed
 
     private void Region9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Region9ActionPerformed
-        // TODO add your handling code here:
+DefaultCategoryDataset barChartData = new DefaultCategoryDataset();
+        
+            for (i = 0 ; i < region9.length; i++){
+        barChartData.setValue(magnitude9[i], region9[i], "");
+            }
+        
+        
+        
+        JFreeChart barChart = ChartFactory.createBarChart("DATA VIRTUALIZATION"," ", "Occurance", barChartData, PlotOrientation.VERTICAL, rootPaneCheckingEnabled, rootPaneCheckingEnabled, rootPaneCheckingEnabled);
+        CategoryPlot barchrt = barChart.getCategoryPlot();
+        barchrt.setRangeGridlinePaint(Color.WHITE);
+        barchrt.setBackgroundPaint(new Color(36, 52, 71));
+        ChartPanel barPanel = new ChartPanel (barChart);
+        panelChart.removeAll();
+        panelChart.add(barPanel,BorderLayout.CENTER);
+        panelChart.validate();        // TODO add your handling code here:
     }//GEN-LAST:event_Region9ActionPerformed
 
     private void Region10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Region10ActionPerformed
-        // TODO add your handling code here:
+    DefaultCategoryDataset barChartData = new DefaultCategoryDataset();
+        
+            for (i = 0 ; i < region10.length; i++){
+        barChartData.setValue(magnitude10[i], region10[i], "");
+            }
+        
+        
+        
+        JFreeChart barChart = ChartFactory.createBarChart("DATA VIRTUALIZATION"," ", "Occurance", barChartData, PlotOrientation.VERTICAL, rootPaneCheckingEnabled, rootPaneCheckingEnabled, rootPaneCheckingEnabled);
+        CategoryPlot barchrt = barChart.getCategoryPlot();
+        barchrt.setRangeGridlinePaint(Color.WHITE);
+        barchrt.setBackgroundPaint(new Color(36, 52, 71));
+        ChartPanel barPanel = new ChartPanel (barChart);
+        panelChart.removeAll();
+        panelChart.add(barPanel,BorderLayout.CENTER);
+        panelChart.validate();        // TODO add your handling code here:
     }//GEN-LAST:event_Region10ActionPerformed
 
     private void Region11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Region11ActionPerformed
-        // TODO add your handling code here:
+DefaultCategoryDataset barChartData = new DefaultCategoryDataset();
+        
+            for (i = 0 ; i < region11.length; i++){
+        barChartData.setValue(magnitude11[i], region11[i], "");
+            }
+        
+        
+        
+        JFreeChart barChart = ChartFactory.createBarChart("DATA VIRTUALIZATION"," ", "Occurance", barChartData, PlotOrientation.VERTICAL, rootPaneCheckingEnabled, rootPaneCheckingEnabled, rootPaneCheckingEnabled);
+        CategoryPlot barchrt = barChart.getCategoryPlot();
+        barchrt.setRangeGridlinePaint(Color.WHITE);
+        barchrt.setBackgroundPaint(new Color(36, 52, 71));
+        ChartPanel barPanel = new ChartPanel (barChart);
+        panelChart.removeAll();
+        panelChart.add(barPanel,BorderLayout.CENTER);
+        panelChart.validate();        // TODO add your handling code here:
     }//GEN-LAST:event_Region11ActionPerformed
 
     private void Region12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Region12ActionPerformed
-        // TODO add your handling code here:
+DefaultCategoryDataset barChartData = new DefaultCategoryDataset();
+        
+            for (i = 0 ; i < region12.length; i++){
+        barChartData.setValue(magnitude12[i], region12[i], "");
+            }
+        
+        
+        
+        JFreeChart barChart = ChartFactory.createBarChart("DATA VIRTUALIZATION"," ", "Occurance", barChartData, PlotOrientation.VERTICAL, rootPaneCheckingEnabled, rootPaneCheckingEnabled, rootPaneCheckingEnabled);
+        CategoryPlot barchrt = barChart.getCategoryPlot();
+        barchrt.setRangeGridlinePaint(Color.WHITE);
+        barchrt.setBackgroundPaint(new Color(36, 52, 71));
+        ChartPanel barPanel = new ChartPanel (barChart);
+        panelChart.removeAll();
+        panelChart.add(barPanel,BorderLayout.CENTER);
+        panelChart.validate();        // TODO add your handling code here:
     }//GEN-LAST:event_Region12ActionPerformed
 
     private void Region13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Region13ActionPerformed
-        // TODO add your handling code here:
+DefaultCategoryDataset barChartData = new DefaultCategoryDataset();
+        
+            for (i = 0 ; i < region13.length; i++){
+        barChartData.setValue(magnitude13[i], region13[i], "");
+            }
+        
+        
+        
+        JFreeChart barChart = ChartFactory.createBarChart("DATA VIRTUALIZATION"," ", "Occurance", barChartData, PlotOrientation.VERTICAL, rootPaneCheckingEnabled, rootPaneCheckingEnabled, rootPaneCheckingEnabled);
+        CategoryPlot barchrt = barChart.getCategoryPlot();
+        barchrt.setRangeGridlinePaint(Color.WHITE);
+        barchrt.setBackgroundPaint(new Color(36, 52, 71));
+        ChartPanel barPanel = new ChartPanel (barChart);
+        panelChart.removeAll();
+        panelChart.add(barPanel,BorderLayout.CENTER);
+        panelChart.validate();        // TODO add your handling code here:
     }//GEN-LAST:event_Region13ActionPerformed
+
+    private void Region14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Region14ActionPerformed
+        DefaultCategoryDataset barChartData = new DefaultCategoryDataset();
+        
+            for (i = 0 ; i < NCR.length; i++){
+        barChartData.setValue(magnitude14[i], NCR[i], "");
+            }
+        
+        
+        
+        JFreeChart barChart = ChartFactory.createBarChart("DATA VIRTUALIZATION"," ", "Occurance", barChartData, PlotOrientation.VERTICAL, rootPaneCheckingEnabled, rootPaneCheckingEnabled, rootPaneCheckingEnabled);
+        CategoryPlot barchrt = barChart.getCategoryPlot();
+        barchrt.setRangeGridlinePaint(Color.WHITE);
+        barchrt.setBackgroundPaint(new Color(36, 52, 71));
+        ChartPanel barPanel = new ChartPanel (barChart);
+        panelChart.removeAll();
+        panelChart.add(barPanel,BorderLayout.CENTER);
+        panelChart.validate();        // TODO add your handling code here:
+    }//GEN-LAST:event_Region14ActionPerformed
+
+    private void Region15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Region15ActionPerformed
+        DefaultCategoryDataset barChartData = new DefaultCategoryDataset();
+        
+            for (i = 0 ; i < CAR.length; i++){
+        barChartData.setValue(magnitude15[i], CAR[i], "");
+            }
+        
+        
+        
+        JFreeChart barChart = ChartFactory.createBarChart("DATA VIRTUALIZATION"," ", "Occurance", barChartData, PlotOrientation.VERTICAL, rootPaneCheckingEnabled, rootPaneCheckingEnabled, rootPaneCheckingEnabled);
+        CategoryPlot barchrt = barChart.getCategoryPlot();
+        barchrt.setRangeGridlinePaint(Color.WHITE);
+        barchrt.setBackgroundPaint(new Color(36, 52, 71));
+        ChartPanel barPanel = new ChartPanel (barChart);
+        panelChart.removeAll();
+        panelChart.add(barPanel,BorderLayout.CENTER);
+        panelChart.validate();        // TODO add your handling code here:
+    }//GEN-LAST:event_Region15ActionPerformed
+
+    private void Region16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Region16ActionPerformed
+        DefaultCategoryDataset barChartData = new DefaultCategoryDataset();
+        
+            for (i = 0 ; i < BARMM.length; i++){
+        barChartData.setValue(magnitude16[i], BARMM[i], "");
+            }
+        
+        
+        
+        JFreeChart barChart = ChartFactory.createBarChart("DATA VIRTUALIZATION"," ", "Occurance", barChartData, PlotOrientation.VERTICAL, rootPaneCheckingEnabled, rootPaneCheckingEnabled, rootPaneCheckingEnabled);
+        CategoryPlot barchrt = barChart.getCategoryPlot();
+        barchrt.setRangeGridlinePaint(Color.WHITE);
+        barchrt.setBackgroundPaint(new Color(36, 52, 71));
+        ChartPanel barPanel = new ChartPanel (barChart);
+        panelChart.removeAll();
+        panelChart.add(barPanel,BorderLayout.CENTER);
+        panelChart.validate();        // TODO add your handling code here:
+    }//GEN-LAST:event_Region16ActionPerformed
        
     /**
      * @param args the command line arguments
@@ -1060,6 +1374,9 @@ public class DashboardUI extends javax.swing.JFrame {
     private javax.swing.JButton Region11;
     private javax.swing.JButton Region12;
     private javax.swing.JButton Region13;
+    private javax.swing.JButton Region14;
+    private javax.swing.JButton Region15;
+    private javax.swing.JButton Region16;
     private javax.swing.JButton Region2;
     private javax.swing.JButton Region3;
     private javax.swing.JButton Region4;
