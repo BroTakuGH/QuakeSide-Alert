@@ -110,7 +110,7 @@ public class CreateAccUI extends javax.swing.JFrame {
         jLabel6.setText("(Real Time Clock)");
 
         jLabel8.setForeground(new java.awt.Color(190, 153, 125));
-        jLabel8.setText("ADDRESS");
+        jLabel8.setText("CITY");
 
         jTextField2.setBackground(new java.awt.Color(40, 42, 58));
         jTextField2.setForeground(new java.awt.Color(255, 255, 255));
