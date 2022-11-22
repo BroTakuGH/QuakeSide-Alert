@@ -92,7 +92,7 @@ public class DashboardUI extends javax.swing.JFrame {
     public DashboardUI() {
 
         initComponents();
-
+        TIME.setVisible(false);
         images();
         this.setSize(988, 657);
         scaleImage();
@@ -310,8 +310,8 @@ public class DashboardUI extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(11, 17, 23));
 
         Region1.setBackground(new java.awt.Color(255, 204, 0));
-        Region1.setText("Region1");
-        Region1.setActionCommand("Region I");
+        Region1.setText("Region I");
+        Region1.setActionCommand("Region1");
         Region1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Region1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -320,8 +320,9 @@ public class DashboardUI extends javax.swing.JFrame {
         });
 
         Region2.setBackground(new java.awt.Color(255, 204, 0));
-        Region2.setText("Region2");
+        Region2.setText("Region II");
         Region2.setActionCommand("Region I");
+        Region2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Region2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Region2ActionPerformed(evt);
@@ -329,8 +330,9 @@ public class DashboardUI extends javax.swing.JFrame {
         });
 
         Region3.setBackground(new java.awt.Color(255, 204, 0));
-        Region3.setText("Region2");
+        Region3.setText("Region III");
         Region3.setActionCommand("Region I");
+        Region3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Region3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Region3ActionPerformed(evt);
@@ -338,8 +340,9 @@ public class DashboardUI extends javax.swing.JFrame {
         });
 
         Region4.setBackground(new java.awt.Color(255, 204, 0));
-        Region4.setText("Region2");
+        Region4.setText("Region IV");
         Region4.setActionCommand("Region I");
+        Region4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Region4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Region4ActionPerformed(evt);
@@ -347,8 +350,9 @@ public class DashboardUI extends javax.swing.JFrame {
         });
 
         Region5.setBackground(new java.awt.Color(255, 204, 0));
-        Region5.setText("Region2");
+        Region5.setText("Region V");
         Region5.setActionCommand("Region I");
+        Region5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Region5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Region5ActionPerformed(evt);
@@ -356,8 +360,9 @@ public class DashboardUI extends javax.swing.JFrame {
         });
 
         Region6.setBackground(new java.awt.Color(255, 204, 0));
-        Region6.setText("Region2");
+        Region6.setText("Region VI");
         Region6.setActionCommand("Region I");
+        Region6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Region6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Region6ActionPerformed(evt);
@@ -365,8 +370,9 @@ public class DashboardUI extends javax.swing.JFrame {
         });
 
         Region7.setBackground(new java.awt.Color(255, 204, 0));
-        Region7.setText("Region2");
+        Region7.setText("Region VII");
         Region7.setActionCommand("Region I");
+        Region7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Region7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Region7ActionPerformed(evt);
@@ -374,8 +380,9 @@ public class DashboardUI extends javax.swing.JFrame {
         });
 
         Region8.setBackground(new java.awt.Color(255, 204, 0));
-        Region8.setText("Region2");
+        Region8.setText("Region VIII");
         Region8.setActionCommand("Region I");
+        Region8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Region8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Region8ActionPerformed(evt);
@@ -383,8 +390,9 @@ public class DashboardUI extends javax.swing.JFrame {
         });
 
         Region9.setBackground(new java.awt.Color(255, 204, 0));
-        Region9.setText("Region2");
+        Region9.setText("Region IX");
         Region9.setActionCommand("Region I");
+        Region9.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Region9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Region9ActionPerformed(evt);
@@ -392,8 +400,9 @@ public class DashboardUI extends javax.swing.JFrame {
         });
 
         Region10.setBackground(new java.awt.Color(255, 204, 0));
-        Region10.setText("Region2");
+        Region10.setText("Region X");
         Region10.setActionCommand("Region I");
+        Region10.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Region10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Region10ActionPerformed(evt);
@@ -401,8 +410,9 @@ public class DashboardUI extends javax.swing.JFrame {
         });
 
         Region11.setBackground(new java.awt.Color(255, 204, 0));
-        Region11.setText("Region2");
+        Region11.setText("Region XI");
         Region11.setActionCommand("Region I");
+        Region11.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Region11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Region11ActionPerformed(evt);
@@ -410,8 +420,9 @@ public class DashboardUI extends javax.swing.JFrame {
         });
 
         Region12.setBackground(new java.awt.Color(255, 204, 0));
-        Region12.setText("Region2");
+        Region12.setText("Region XII");
         Region12.setActionCommand("Region I");
+        Region12.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Region12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Region12ActionPerformed(evt);
@@ -419,8 +430,9 @@ public class DashboardUI extends javax.swing.JFrame {
         });
 
         Region13.setBackground(new java.awt.Color(255, 204, 0));
-        Region13.setText("Region21");
+        Region13.setText("Region XIII");
         Region13.setActionCommand("Region I");
+        Region13.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Region13.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Region13ActionPerformed(evt);
@@ -428,8 +440,9 @@ public class DashboardUI extends javax.swing.JFrame {
         });
 
         Region14.setBackground(new java.awt.Color(255, 204, 0));
-        Region14.setText("Region21");
+        Region14.setText("NCR");
         Region14.setActionCommand("Region I");
+        Region14.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Region14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Region14ActionPerformed(evt);
@@ -437,8 +450,9 @@ public class DashboardUI extends javax.swing.JFrame {
         });
 
         Region15.setBackground(new java.awt.Color(255, 204, 0));
-        Region15.setText("Region21");
+        Region15.setText("CAR");
         Region15.setActionCommand("Region I");
+        Region15.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Region15.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Region15ActionPerformed(evt);
@@ -446,8 +460,9 @@ public class DashboardUI extends javax.swing.JFrame {
         });
 
         Region16.setBackground(new java.awt.Color(255, 204, 0));
-        Region16.setText("Region21");
+        Region16.setText("BARMM");
         Region16.setActionCommand("Region I");
+        Region16.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Region16.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Region16ActionPerformed(evt);
@@ -459,36 +474,42 @@ public class DashboardUI extends javax.swing.JFrame {
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(18, 18, 18)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(Region8)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(Region16, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(12, 12, 12)
+                        .addComponent(Region8, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Region16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(Region3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(Region4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(Region5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(Region6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(Region7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(Region1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(Region2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Region14, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Region15, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Region9)
-                            .addComponent(Region10)
-                            .addComponent(Region11)
-                            .addComponent(Region12)
-                            .addComponent(Region13, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(24, Short.MAX_VALUE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(Region6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(Region7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(Region3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(Region4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addGap(9, 9, 9)
+                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(Region5, javax.swing.GroupLayout.DEFAULT_SIZE, 95, Short.MAX_VALUE)
+                                    .addComponent(Region2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(Region1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(Region9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Region10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Region15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Region13)
+                            .addComponent(Region14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Region12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Region11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap(94, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Region1)
                     .addComponent(Region9))
@@ -531,7 +552,9 @@ public class DashboardUI extends javax.swing.JFrame {
         );
         leftPanelLayout.setVerticalGroup(
             leftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(leftPanelLayout.createSequentialGroup()
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 657, Short.MAX_VALUE))
         );
 
         centerPanel.setBackground(new java.awt.Color(36, 52, 71));
@@ -758,7 +781,7 @@ public class DashboardUI extends javax.swing.JFrame {
         REPORT.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jTable1.setBackground(new java.awt.Color(36, 52, 71));
-        jTable1.setForeground(new java.awt.Color(20, 29, 38));
+        jTable1.setForeground(new java.awt.Color(255, 255, 255));
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -902,7 +925,7 @@ public class DashboardUI extends javax.swing.JFrame {
         
         
         
-        JFreeChart barChart = ChartFactory.createBarChart("DATA VIRTUALIZATION"," ", "Occurance", barChartData, PlotOrientation.VERTICAL, rootPaneCheckingEnabled, rootPaneCheckingEnabled, rootPaneCheckingEnabled);
+        JFreeChart barChart = ChartFactory.createBarChart("REGION I"," ", "HIGHEST MAGNITUDE IN 2022", barChartData, PlotOrientation.VERTICAL, rootPaneCheckingEnabled, rootPaneCheckingEnabled, rootPaneCheckingEnabled);
         CategoryPlot barchrt = barChart.getCategoryPlot();
         barchrt.setRangeGridlinePaint(Color.WHITE);
         barchrt.setBackgroundPaint(new Color(36, 52, 71));
@@ -913,11 +936,28 @@ public class DashboardUI extends javax.swing.JFrame {
             
         
     }//GEN-LAST:event_Region1ActionPerformed
-
-    private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
+    public void defaultPanel(){
         
+        DefaultCategoryDataset barChartData = new DefaultCategoryDataset();
+        
+        for (i = 0 ; i < region1.length; i++){
+        barChartData.setValue(magnitude1[i], region1[i], "");
+            }
+        
+        
+        
+        JFreeChart barChart = ChartFactory.createBarChart("REGION I"," ", "HIGHEST MAGNITUDE IN 2022", barChartData, PlotOrientation.VERTICAL, rootPaneCheckingEnabled, rootPaneCheckingEnabled, rootPaneCheckingEnabled);
+        CategoryPlot barchrt = barChart.getCategoryPlot();
+        barchrt.setRangeGridlinePaint(Color.WHITE);
+        barchrt.setBackgroundPaint(new Color(36, 52, 71));
+        ChartPanel barPanel = new ChartPanel (barChart);
+        panelChart.removeAll();
+        panelChart.add(barPanel,BorderLayout.CENTER);
+        panelChart.validate();
+    }
+    private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
+        defaultPanel();
          if (open == false){
-             jPanel2.setSize(200,657);
          open = true;
          System.out.println(open);
          Thread th = new Thread(){
@@ -928,8 +968,9 @@ public class DashboardUI extends javax.swing.JFrame {
                          Thread.sleep(1);
                          jPanel2.setSize(200,h);
                          jPanel3.setSize(200,h);
-                         System.out.println(jPanel2.getSize());
+                         //576, 338
                      }
+                     
                  } catch (Exception e){
                      JOptionPane.showMessageDialog(null, e);
                  }
@@ -1014,14 +1055,46 @@ public class DashboardUI extends javax.swing.JFrame {
 
     private void jLabel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseClicked
         TableColumnModel columnModel = jTable1.getColumnModel();
-        columnModel.getColumn(0).setPreferredWidth(2);
-        columnModel.getColumn(1).setPreferredWidth(10);
-        columnModel.getColumn(2).setPreferredWidth(30);
+        columnModel.getColumn(0).setPreferredWidth(70);
+        columnModel.getColumn(1).setPreferredWidth(1);
+        columnModel.getColumn(2).setPreferredWidth(20);
         columnModel.getColumn(3).setPreferredWidth(200);
+        if (open == true){
+         open = false;
+         System.out.println(open);
+         Thread th = new Thread(){
+             @Override
+             public void run(){
+                 try {
+                     for (int h = 657; h >= 0; h--){
+                         Thread.sleep(1);
+                         jPanel2.setSize(200,h);
+                         jPanel3.setSize(200,h);
+                     }
+                 } catch (Exception e){
+                     JOptionPane.showMessageDialog(null, e);
+                 }
+             }
+
+         };th.start();
+     }
+        
+    panelChart.removeAll();
+    panelChart.add(jPanel4);
+    panelChart.repaint();
+    panelChart.revalidate();
     }//GEN-LAST:event_jLabel5MouseClicked
 
+    void time() {
+
+                Date d = new Date();
+                SimpleDateFormat s = new SimpleDateFormat("hh:mm:ss:a");
+                TIME.setText(s.format(d));
+
+    }
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
     try {
+            time();
             String User_Name = USERNAME.username;
             Class.forName("com.mysql.jdbc.Driver");
             Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/quakedb", "root", "");
@@ -1034,14 +1107,14 @@ public class DashboardUI extends javax.swing.JFrame {
                 String Address = rs.getString(3);
                 
                         
-             model.insertRow(model.getRowCount(), new Object[]{DATE.getText() + " " + TIME.getText(),Username,Address,REPORT.getText()}); 
+             model.insertRow(model.getRowCount(), new Object[]{DATE.getText() + " " + TIME.getText(),Address,Username,REPORT.getText()}); 
            
             }
             
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, e);
         }
-               // TODO add your handling code here:
+        
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void Region2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Region2ActionPerformed
@@ -1054,7 +1127,7 @@ public class DashboardUI extends javax.swing.JFrame {
         
         
         
-        JFreeChart barChart = ChartFactory.createBarChart("DATA VIRTUALIZATION"," ", "Occurance", barChartData, PlotOrientation.VERTICAL, rootPaneCheckingEnabled, rootPaneCheckingEnabled, rootPaneCheckingEnabled);
+        JFreeChart barChart = ChartFactory.createBarChart("REGION II"," ", "HIGHEST MAGNITUDE IN 2022", barChartData, PlotOrientation.VERTICAL, rootPaneCheckingEnabled, rootPaneCheckingEnabled, rootPaneCheckingEnabled);
         CategoryPlot barchrt = barChart.getCategoryPlot();
         barchrt.setRangeGridlinePaint(Color.WHITE);
         barchrt.setBackgroundPaint(new Color(36, 52, 71));
@@ -1074,7 +1147,7 @@ DefaultCategoryDataset barChartData = new DefaultCategoryDataset();
         
         
         
-        JFreeChart barChart = ChartFactory.createBarChart("DATA VIRTUALIZATION"," ", "Occurance", barChartData, PlotOrientation.VERTICAL, rootPaneCheckingEnabled, rootPaneCheckingEnabled, rootPaneCheckingEnabled);
+        JFreeChart barChart = ChartFactory.createBarChart("REGION III"," ", "HIGHEST MAGNITUDE IN 2022", barChartData, PlotOrientation.VERTICAL, rootPaneCheckingEnabled, rootPaneCheckingEnabled, rootPaneCheckingEnabled);
         CategoryPlot barchrt = barChart.getCategoryPlot();
         barchrt.setRangeGridlinePaint(Color.WHITE);
         barchrt.setBackgroundPaint(new Color(36, 52, 71));
@@ -1093,7 +1166,7 @@ DefaultCategoryDataset barChartData = new DefaultCategoryDataset();
         
         
         
-        JFreeChart barChart = ChartFactory.createBarChart("DATA VIRTUALIZATION"," ", "Occurance", barChartData, PlotOrientation.VERTICAL, rootPaneCheckingEnabled, rootPaneCheckingEnabled, rootPaneCheckingEnabled);
+        JFreeChart barChart = ChartFactory.createBarChart("REGION IV"," ", "HIGHEST MAGNITUDE IN 2022", barChartData, PlotOrientation.VERTICAL, rootPaneCheckingEnabled, rootPaneCheckingEnabled, rootPaneCheckingEnabled);
         CategoryPlot barchrt = barChart.getCategoryPlot();
         barchrt.setRangeGridlinePaint(Color.WHITE);
         barchrt.setBackgroundPaint(new Color(36, 52, 71));
@@ -1112,7 +1185,7 @@ DefaultCategoryDataset barChartData = new DefaultCategoryDataset();
         
         
         
-        JFreeChart barChart = ChartFactory.createBarChart("DATA VIRTUALIZATION"," ", "Occurance", barChartData, PlotOrientation.VERTICAL, rootPaneCheckingEnabled, rootPaneCheckingEnabled, rootPaneCheckingEnabled);
+        JFreeChart barChart = ChartFactory.createBarChart("REGION V"," ", "HIGHEST MAGNITUDE IN 2022", barChartData, PlotOrientation.VERTICAL, rootPaneCheckingEnabled, rootPaneCheckingEnabled, rootPaneCheckingEnabled);
         CategoryPlot barchrt = barChart.getCategoryPlot();
         barchrt.setRangeGridlinePaint(Color.WHITE);
         barchrt.setBackgroundPaint(new Color(36, 52, 71));
@@ -1131,7 +1204,7 @@ DefaultCategoryDataset barChartData = new DefaultCategoryDataset();
         
         
         
-        JFreeChart barChart = ChartFactory.createBarChart("DATA VIRTUALIZATION"," ", "Occurance", barChartData, PlotOrientation.VERTICAL, rootPaneCheckingEnabled, rootPaneCheckingEnabled, rootPaneCheckingEnabled);
+        JFreeChart barChart = ChartFactory.createBarChart("REGION VI"," ", "HIGHEST MAGNITUDE IN 2022", barChartData, PlotOrientation.VERTICAL, rootPaneCheckingEnabled, rootPaneCheckingEnabled, rootPaneCheckingEnabled);
         CategoryPlot barchrt = barChart.getCategoryPlot();
         barchrt.setRangeGridlinePaint(Color.WHITE);
         barchrt.setBackgroundPaint(new Color(36, 52, 71));
@@ -1150,7 +1223,7 @@ DefaultCategoryDataset barChartData = new DefaultCategoryDataset();
         
         
         
-        JFreeChart barChart = ChartFactory.createBarChart("DATA VIRTUALIZATION"," ", "Occurance", barChartData, PlotOrientation.VERTICAL, rootPaneCheckingEnabled, rootPaneCheckingEnabled, rootPaneCheckingEnabled);
+        JFreeChart barChart = ChartFactory.createBarChart("REGION VII"," ", "HIGHEST MAGNITUDE IN 2022", barChartData, PlotOrientation.VERTICAL, rootPaneCheckingEnabled, rootPaneCheckingEnabled, rootPaneCheckingEnabled);
         CategoryPlot barchrt = barChart.getCategoryPlot();
         barchrt.setRangeGridlinePaint(Color.WHITE);
         barchrt.setBackgroundPaint(new Color(36, 52, 71));
@@ -1169,7 +1242,7 @@ DefaultCategoryDataset barChartData = new DefaultCategoryDataset();
         
         
         
-        JFreeChart barChart = ChartFactory.createBarChart("DATA VIRTUALIZATION"," ", "Occurance", barChartData, PlotOrientation.VERTICAL, rootPaneCheckingEnabled, rootPaneCheckingEnabled, rootPaneCheckingEnabled);
+        JFreeChart barChart = ChartFactory.createBarChart("REGION VIII"," ", "HIGHEST MAGNITUDE IN 2022", barChartData, PlotOrientation.VERTICAL, rootPaneCheckingEnabled, rootPaneCheckingEnabled, rootPaneCheckingEnabled);
         CategoryPlot barchrt = barChart.getCategoryPlot();
         barchrt.setRangeGridlinePaint(Color.WHITE);
         barchrt.setBackgroundPaint(new Color(36, 52, 71));
@@ -1188,7 +1261,7 @@ DefaultCategoryDataset barChartData = new DefaultCategoryDataset();
         
         
         
-        JFreeChart barChart = ChartFactory.createBarChart("DATA VIRTUALIZATION"," ", "Occurance", barChartData, PlotOrientation.VERTICAL, rootPaneCheckingEnabled, rootPaneCheckingEnabled, rootPaneCheckingEnabled);
+        JFreeChart barChart = ChartFactory.createBarChart("REGION IX"," ", "HIGHEST MAGNITUDE IN 2022", barChartData, PlotOrientation.VERTICAL, rootPaneCheckingEnabled, rootPaneCheckingEnabled, rootPaneCheckingEnabled);
         CategoryPlot barchrt = barChart.getCategoryPlot();
         barchrt.setRangeGridlinePaint(Color.WHITE);
         barchrt.setBackgroundPaint(new Color(36, 52, 71));
@@ -1207,7 +1280,7 @@ DefaultCategoryDataset barChartData = new DefaultCategoryDataset();
         
         
         
-        JFreeChart barChart = ChartFactory.createBarChart("DATA VIRTUALIZATION"," ", "Occurance", barChartData, PlotOrientation.VERTICAL, rootPaneCheckingEnabled, rootPaneCheckingEnabled, rootPaneCheckingEnabled);
+        JFreeChart barChart = ChartFactory.createBarChart("REGION X"," ", "HIGHEST MAGNITUDE IN 2022", barChartData, PlotOrientation.VERTICAL, rootPaneCheckingEnabled, rootPaneCheckingEnabled, rootPaneCheckingEnabled);
         CategoryPlot barchrt = barChart.getCategoryPlot();
         barchrt.setRangeGridlinePaint(Color.WHITE);
         barchrt.setBackgroundPaint(new Color(36, 52, 71));
@@ -1226,7 +1299,7 @@ DefaultCategoryDataset barChartData = new DefaultCategoryDataset();
         
         
         
-        JFreeChart barChart = ChartFactory.createBarChart("DATA VIRTUALIZATION"," ", "Occurance", barChartData, PlotOrientation.VERTICAL, rootPaneCheckingEnabled, rootPaneCheckingEnabled, rootPaneCheckingEnabled);
+        JFreeChart barChart = ChartFactory.createBarChart("REGION XI"," ", "HIGHEST MAGNITUDE IN 2022", barChartData, PlotOrientation.VERTICAL, rootPaneCheckingEnabled, rootPaneCheckingEnabled, rootPaneCheckingEnabled);
         CategoryPlot barchrt = barChart.getCategoryPlot();
         barchrt.setRangeGridlinePaint(Color.WHITE);
         barchrt.setBackgroundPaint(new Color(36, 52, 71));
@@ -1245,7 +1318,7 @@ DefaultCategoryDataset barChartData = new DefaultCategoryDataset();
         
         
         
-        JFreeChart barChart = ChartFactory.createBarChart("DATA VIRTUALIZATION"," ", "Occurance", barChartData, PlotOrientation.VERTICAL, rootPaneCheckingEnabled, rootPaneCheckingEnabled, rootPaneCheckingEnabled);
+        JFreeChart barChart = ChartFactory.createBarChart("REGION XII"," ", "HIGHEST MAGNITUDE IN 2022", barChartData, PlotOrientation.VERTICAL, rootPaneCheckingEnabled, rootPaneCheckingEnabled, rootPaneCheckingEnabled);
         CategoryPlot barchrt = barChart.getCategoryPlot();
         barchrt.setRangeGridlinePaint(Color.WHITE);
         barchrt.setBackgroundPaint(new Color(36, 52, 71));
@@ -1264,7 +1337,7 @@ DefaultCategoryDataset barChartData = new DefaultCategoryDataset();
         
         
         
-        JFreeChart barChart = ChartFactory.createBarChart("DATA VIRTUALIZATION"," ", "Occurance", barChartData, PlotOrientation.VERTICAL, rootPaneCheckingEnabled, rootPaneCheckingEnabled, rootPaneCheckingEnabled);
+        JFreeChart barChart = ChartFactory.createBarChart("REGION XIII"," ", "HIGHEST MAGNITUDE IN 2022", barChartData, PlotOrientation.VERTICAL, rootPaneCheckingEnabled, rootPaneCheckingEnabled, rootPaneCheckingEnabled);
         CategoryPlot barchrt = barChart.getCategoryPlot();
         barchrt.setRangeGridlinePaint(Color.WHITE);
         barchrt.setBackgroundPaint(new Color(36, 52, 71));
@@ -1283,7 +1356,7 @@ DefaultCategoryDataset barChartData = new DefaultCategoryDataset();
         
         
         
-        JFreeChart barChart = ChartFactory.createBarChart("DATA VIRTUALIZATION"," ", "Occurance", barChartData, PlotOrientation.VERTICAL, rootPaneCheckingEnabled, rootPaneCheckingEnabled, rootPaneCheckingEnabled);
+        JFreeChart barChart = ChartFactory.createBarChart("NCR"," ", "HIGHEST MAGNITUDE IN 2022", barChartData, PlotOrientation.VERTICAL, rootPaneCheckingEnabled, rootPaneCheckingEnabled, rootPaneCheckingEnabled);
         CategoryPlot barchrt = barChart.getCategoryPlot();
         barchrt.setRangeGridlinePaint(Color.WHITE);
         barchrt.setBackgroundPaint(new Color(36, 52, 71));
@@ -1302,7 +1375,7 @@ DefaultCategoryDataset barChartData = new DefaultCategoryDataset();
         
         
         
-        JFreeChart barChart = ChartFactory.createBarChart("DATA VIRTUALIZATION"," ", "Occurance", barChartData, PlotOrientation.VERTICAL, rootPaneCheckingEnabled, rootPaneCheckingEnabled, rootPaneCheckingEnabled);
+        JFreeChart barChart = ChartFactory.createBarChart("CAR"," ", "HIGHEST MAGNITUDE IN 2022", barChartData, PlotOrientation.VERTICAL, rootPaneCheckingEnabled, rootPaneCheckingEnabled, rootPaneCheckingEnabled);
         CategoryPlot barchrt = barChart.getCategoryPlot();
         barchrt.setRangeGridlinePaint(Color.WHITE);
         barchrt.setBackgroundPaint(new Color(36, 52, 71));
@@ -1321,7 +1394,7 @@ DefaultCategoryDataset barChartData = new DefaultCategoryDataset();
         
         
         
-        JFreeChart barChart = ChartFactory.createBarChart("DATA VIRTUALIZATION"," ", "Occurance", barChartData, PlotOrientation.VERTICAL, rootPaneCheckingEnabled, rootPaneCheckingEnabled, rootPaneCheckingEnabled);
+        JFreeChart barChart = ChartFactory.createBarChart("BARMM"," ", "HIGHEST MAGNITUDE IN 2022", barChartData, PlotOrientation.VERTICAL, rootPaneCheckingEnabled, rootPaneCheckingEnabled, rootPaneCheckingEnabled);
         CategoryPlot barchrt = barChart.getCategoryPlot();
         barchrt.setRangeGridlinePaint(Color.WHITE);
         barchrt.setBackgroundPaint(new Color(36, 52, 71));
@@ -1335,6 +1408,7 @@ DefaultCategoryDataset barChartData = new DefaultCategoryDataset();
      * @param args the command line arguments
      */
     public static void main(String args[]) {
+        
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
@@ -1363,6 +1437,7 @@ DefaultCategoryDataset barChartData = new DefaultCategoryDataset();
             public void run() {
                 new DashboardUI().setVisible(true);
             }
+            
         });
     }
 
