@@ -1,8 +1,9 @@
 package com.mycompany.app;
 
-import java.awt.Color;
+import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.image.BufferedImage;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -28,6 +29,16 @@ public class LoginUI extends javax.swing.JFrame {
      */
     ImageIcon imageWelcome = new ImageIcon("src\\main\\java\\MyIcons\\welcome-removebg-preview.png");
     ImageIcon imageUI = new ImageIcon("src\\main\\java\\MyIcons\\loginui.png");
+    Image appICON = new ImageIcon("src\\main\\java\\MyIcons\\ICON.png").getImage();
+    
+
+    public void setIconImage() {
+        
+         
+
+        super.setIconImage(appICON); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/OverriddenMethodBody
+        
+    }
     public void images(){
         jLabel3.setIcon(imageWelcome);
         jLabel4.setIcon(imageUI);
@@ -35,7 +46,7 @@ public class LoginUI extends javax.swing.JFrame {
     
     public LoginUI() {
         initComponents();
-        
+        setIconImage();
         
         
         //test
@@ -272,7 +283,7 @@ public class LoginUI extends javax.swing.JFrame {
             }
         });
     }
-
+ 
     void time() {
         new Timer(0, new ActionListener(){
             @Override

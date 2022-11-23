@@ -1,5 +1,6 @@
 package com.mycompany.app;
 
+import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.Connection;
@@ -22,7 +23,12 @@ import javax.swing.Timer;
  */
 public class ForgotPassword extends javax.swing.JFrame {
 
-
+    Image appICON = new ImageIcon("src\\main\\java\\MyIcons\\ICON.png").getImage();
+    
+    public void setIconImage() {
+    super.setIconImage(appICON); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/OverriddenMethodBody
+        
+    }
     ImageIcon imageWelcome = new ImageIcon("src\\main\\java\\MyIcons\\welcome-removebg-preview.png");
     ImageIcon imageUI = new ImageIcon("src\\main\\java\\MyIcons\\loginui.png");
     public void images(){
@@ -33,7 +39,7 @@ public class ForgotPassword extends javax.swing.JFrame {
         initComponents();
         images();
         time();
-
+        setIconImage();
         
     }
 

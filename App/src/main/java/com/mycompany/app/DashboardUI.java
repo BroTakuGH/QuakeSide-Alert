@@ -86,6 +86,12 @@ public class DashboardUI extends javax.swing.JFrame {
     //END OF DATE
     DefaultTableModel model;
     
+    Image appICON = new ImageIcon("src\\main\\java\\MyIcons\\ICON.png").getImage();
+    
+    public void setIconImage() {
+        super.setIconImage(appICON); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/OverriddenMethodBody
+        
+    }
     ImageIcon imageQuakeSlide = new ImageIcon("src\\main\\java\\MyIcons\\QuakeSlide.png");
     public void images(){
         jLabel4.setIcon(imageQuakeSlide);
@@ -102,6 +108,7 @@ public class DashboardUI extends javax.swing.JFrame {
         initComponents();
         TIME.setVisible(false);
         images();
+        setIconImage();
         this.setSize(988, 657);
         scaleImage();
         scaleImage1();
